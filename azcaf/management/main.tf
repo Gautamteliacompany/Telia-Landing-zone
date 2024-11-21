@@ -41,7 +41,7 @@ module "enterprise_scale" {
   root_id        = var.root_id
   root_name      = var.root_name
 
-  deploy_demo_landing_zones = true
+  deploy_core_landing_zones = false
 
   # Configuration settings for management resources
   deploy_management_resources    = true
