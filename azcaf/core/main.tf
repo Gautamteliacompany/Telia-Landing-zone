@@ -43,7 +43,7 @@ module "enterprise_scale" {
   root_parent_id = data.azurerm_client_config.current.tenant_id
   root_id        = var.root_id
   root_name      = var.root_name
-  library_path   = "${path.root}/lib"
+  library_path   = "${path.module}/lib"
 
   # Enable creation of core management group hierarchy and additional landing zone
 
