@@ -71,7 +71,7 @@ module "enterprise_scale" {
 #   # resources created by the management module instance and
 #   # to map the subscription to the correct management group,
 #   # but no resources are created by this module instance
-  deploy_management_resources    = false
+  deploy_management_resources    = true
   configure_management_resources = data.terraform_remote_state.management.outputs.configuration
   subscription_id_management     = data.terraform_remote_state.management.outputs.subscription_id
 
