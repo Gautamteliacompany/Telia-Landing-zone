@@ -41,6 +41,8 @@ module "enterprise_scale" {
   root_id        = var.root_id
   root_name      = var.root_name
 
+  # Disable creation of the core management group hierarchy
+  # as this is being created by the core module instance
   deploy_core_landing_zones = false
 
   # Configuration settings for management resources
