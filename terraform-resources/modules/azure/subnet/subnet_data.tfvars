@@ -1,7 +1,7 @@
 subnet_data = {
     "subnet1" = {
         enabled     = true
-        name        = "subnet1"
+        name        = "Telia-subnet1"
         resource_group_name = "telia-rg-westeurope"
         virtual_network_name = "teliacompany-hub-westeurope"
         address_prefixes = ["10.100.1.0/24"]
