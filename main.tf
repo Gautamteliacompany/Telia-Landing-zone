@@ -18,10 +18,5 @@ module "nsg" {
   source = "./terrform-resources/modules/azure/network_security_group"
 }
 
-module "subnet" {
-  source = "./terrform-resources/modules/azure/subnet"
-}
-
-
 
 

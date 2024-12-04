@@ -1,0 +1,11 @@
+name: "Terraform Configuration Drift Detection - Staging"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *" # runs nightly at 3:00 am
+
+jobs:
+  terraform-drift-detection:
+    uses: telia-company/managed-cloud-actions/.github/workflows/tf-drift-azure-staging.yml@main
+    secrets: inherit

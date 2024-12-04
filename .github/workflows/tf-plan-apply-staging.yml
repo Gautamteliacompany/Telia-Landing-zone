@@ -1,0 +1,14 @@
+name: "Terraform Plan/Apply - Staging"
+
+on:
+  push:
+    branches:
+      - staging
+  pull_request:
+    branches:
+      - staging
+
+jobs:
+  terraform-plan-apply:
+    uses: telia-company/managed-cloud-actions/.github/workflows/tf-plan-apply-azure-staging.yml@main
+    secrets: inherit

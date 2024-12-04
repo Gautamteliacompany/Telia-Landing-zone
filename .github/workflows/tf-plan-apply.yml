@@ -1,0 +1,14 @@
+name: "Terraform Plan/Apply - Production"
+
+on:
+  push:
+    branches:
+      - production
+  pull_request:
+    branches:
+      - production
+
+jobs:
+  terraform-plan-apply:
+    uses: telia-company/managed-cloud-actions/.github/workflows/tf-plan-apply-azure.yml@main
+    secrets: inherit
