@@ -12,7 +12,7 @@ resource "azurerm_resource_group" "nsg-rg" {
 # Use NSG module
 module "network_security_group" {
   source              = "./rules"
-  nsg_name            = "telia-nsg"
+  nsg_name            = "telia-networksecuritygroup"
   location            = azurerm_resource_group.nsg-rg.location
   resource_group_name = azurerm_resource_group.nsg-rg.name
 
